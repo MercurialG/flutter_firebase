@@ -1,3 +1,4 @@
+import 'package:firebase_crud/configs/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -8,7 +9,7 @@ class SplashScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
-
+        decoration: BoxDecoration(gradient: mainGradient(context)),
         child:  Image.asset("assets/images/app_splash_logo.png",
           width: 200,
           height: 200,

@@ -12,7 +12,9 @@ class AppCircleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      shape:  CircleBorder(),
+      clipBehavior: Clip.hardEdge,
+      type: MaterialType.transparency,
+      shape:  const CircleBorder(),
       child: InkWell(
         child: child
       ),
